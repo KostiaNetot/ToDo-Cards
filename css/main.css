@@ -1,0 +1,53 @@
+.side-col {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#btnSetNewTask,
+#sendToDoList {
+  width: 100%;
+}
+
+.task-cards-wrapper .card {
+  margin: 0.5rem;
+  max-width: 18rem;
+}
+
+.task-cards-wrapper .card .state-descr {
+  cursor: pointer;
+}
+
+.task-cards-wrapper .card .card-header {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-right: 24px;
+  position: relative;
+}
+
+.card .my-select {
+
+}
+
+button.close {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+}
+
+.task-cards-wrapper .card h5 {
+  margin-bottom: 1.75rem;
+}
+
+.task-cards-wrapper .card .card-body {
+  padding-bottom: 0.5rem;
+}
+
+ p {
+  margin-bottom: 0;
+}
+
+ .hidden {
+   display: none;
+ }

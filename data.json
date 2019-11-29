@@ -1,0 +1,44 @@
+[
+  {
+    "default-tasks": ["Drink water with lemon", "Make morning workout"]
+  },
+  {
+    "state": [
+      {
+        "key": "open",
+        "name": "Open",
+        "color": "card border-primary text-primary"
+      },
+      {
+        "key": "progress",
+        "name": "In progress",
+        "color": "card border-success text-success"
+      },
+      {
+        "key": "done",
+        "name": "Done",
+        "color": "card border-secondary  text-secondary "
+      }
+    ]
+  },
+  {
+    "priority": [
+      {
+        "key": 1,
+        "name": "Low"
+      },
+      {
+        "key": 2,
+        "name": "Minor"
+      },
+      {
+        "key": 3,
+        "name": "Major"
+      },
+      {
+        "key": 4,
+        "name": "High"
+      }
+    ]
+  }
+]

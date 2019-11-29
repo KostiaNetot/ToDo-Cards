@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ToDo Cards from Kostia</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/star-rating-svg/src/css/star-rating-svg.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+  <h1 class="text-center">Make your ToDo Cards</h1>
+</header>
+<main>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2 side-col border-right">
+        <form name="newTask">
+          <div class="form-group">
+            <input type="email" class="form-control" name="newTaskName" id="newTaskName" placeholder="New Task">
+            <select class="custom-select my-1 mr-sm-2" name="priorityFormSelect" id="priorityFormSelect">
+              <option>Priority...</option>
+              <option value="1">Low</option>
+              <option value="2">Minor</option>
+              <option value="3">Major</option>
+              <option value="4">High</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-outline-success" id="btnSetNewTask">Set new Task</button>
+        </form>
+        <form name="sendToDo">
+          <button type="button" id="sendToDoList" class="btn btn-info">Send ToDo List</button>
+        </form>
+      </div>
+      <div class="col">
+        <div class="row task-cards-wrapper"></div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+<!--  ==============Hidden===============================================================-->
+  <select class="my-select hidden">
+    <option>Status:</option>
+    <option value="open">Open</option>
+    <option value="progress">In progress</option>
+    <option value="done">Done</option>
+  </select>
+
+<!--  <div id="taskCard" class="card border-primary text-primary hidden" style="max-width: 18rem;">-->
+<!--    <div class="card-header">-->
+<!--      <button type="button" class="close" aria-label="Close">-->
+<!--        <span aria-hidden="true">&times;</span>-->
+<!--      </button>-->
+<!--      <p><span id="stateText">Test</span> status</p>-->
+<!--    </div>-->
+<!--    <div class="card-body">-->
+<!--      <h5 class="card-title">Test Test</h5>-->
+<!--      <p class="card-text"><span id="priorText">Test</span> priority</p>-->
+<!--      <div class="my-rating"></div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</footer>-->
+
+<!------------------Libraries------------------------------------------->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/star-rating-svg/dist/jquery.star-rating-svg.min.js"></script>
+<!------------------------------------------------------------------------->
+
+<script src="js/Task.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/defaultTasks.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
